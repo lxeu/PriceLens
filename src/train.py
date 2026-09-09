@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from model import *
+import os
 
 FEATURES = ["Square Footage", "Bedrooms", "Bathrooms", "Year Built"]
 TARGET = "Price"
@@ -42,6 +43,12 @@ print("weight values:")
 for i in range(len(FEATURES)):
     print(FEATURES[i], "=", w[i])
 print("final cost =", cost_history[-1])
+
+# Save learned parameters
+params_path = os.path.join("models", "params.npz")
+os.makedirs("models", exist_ok=True)
+np.savez(params_path, w=w, b=np.array([b]), mu=mu, sigma=sigma)
+print(f"Parameters saved to {params_path}")
 
 # Plot cost
 plt.plot(cost_history)
