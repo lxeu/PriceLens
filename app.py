@@ -8,7 +8,7 @@ def get_params():
 
 st.set_page_config(page_title="PriceLens", page_icon="🏠")
 
-# Streamlit has no parameter to hide number_input steppers, so hide them directly.
+# Streamlit doesn't have a parameter to hide number_input steppers, so hide them directly.
 st.markdown("""
 <style>
 [data-testid="stNumberInputStepUp"],
