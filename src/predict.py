@@ -19,5 +19,6 @@ def predict_price(sqft, bedrooms, bathrooms, year_built, params=None):
     w, b, mu, sigma = params
 
     x = np.array([sqft, bedrooms, bathrooms, year_built], dtype=float)
+    # Must use the TRAINING mu/sigma. The weights were learned after scaling
     x_norm = (x - mu) / sigma
     return float(np.dot(x_norm, w) + b)
