@@ -12,6 +12,19 @@ https://pricelens.streamlit.app
 
 ![PriceLens](docs/pricelens.png)
 
+## Features
+
+- Price estimates from four inputs: size, bedrooms, bathrooms, year built
+- Input bounds match the training data range
+- Model parameters saved after training, so predictions are instant
+
+## Tech stack
+
+- **Python** with **NumPy** for the model
+- **pandas** for data cleaning and outlier filtering
+- **Streamlit** for the web interface
+- **Matplotlib** for training diagnostics
+
 ## Run locally
 
 ```bash
