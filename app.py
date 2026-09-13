@@ -8,6 +8,7 @@ def get_params():
 
 st.set_page_config(page_title="PriceLens", page_icon="🏠")
 
+# Remove sliders, change estimated value font, and center header and description.
 st.html("""
 <style>
 [data-testid="stNumberInputStepUp"],
