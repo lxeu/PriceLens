@@ -19,6 +19,15 @@ https://pricelens.streamlit.app
 - Input bounds match the training data range
 - Model parameters saved after training, so predictions are instant
 
+## Model
+
+Multivariable linear regression trained with gradient descent, implemented
+from scratch in NumPy. Features: square footage, bedrooms, bathrooms and
+year built. Inputs are z-score normalized using the training set's mean
+and standard deviation.
+
+Trained on 1,653 Edmonton listings after outlier filtering.
+
 ## Tech stack
 
 - **Frontend:** Streamlit
@@ -46,6 +55,12 @@ python src/train.py
 The model is developed in
 [edmonton-housing-price-predictor](https://github.com/lxeu/edmonton-housing-price-predictor).
 I started from a single-variable regression and built up to the multivariable model used here.
+
+## Limitations
+
+- No sense of location, which is the single most impactful feature that is missing.
+- Systematically underestimates homes above roughly $1M
+- Trained on a single market snapshot
 
 ## Roadmap
 
