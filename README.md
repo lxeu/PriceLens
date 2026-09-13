@@ -15,15 +15,16 @@ https://pricelens.streamlit.app
 ## Features
 
 - Price estimates from four inputs: size, bedrooms, bathrooms, year built
+- A user-friendly Streamlit interface for quick estimates.
 - Input bounds match the training data range
 - Model parameters saved after training, so predictions are instant
 
 ## Tech stack
 
-- **Python** with **NumPy** for the model
-- **pandas** for data cleaning and outlier filtering
-- **Streamlit** for the web interface
-- **Matplotlib** for training diagnostics
+**Fronted:** Streamlit
+**Backend** Python
+**Data Processing:** Pandas, NumPy
+**Training Diagnostics:** Matplotlib
 
 ## Run locally
 
