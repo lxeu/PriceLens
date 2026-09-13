@@ -1,0 +1,21 @@
+[theme]
+base = "dark"
+
+# Core palette
+primaryColor = "#2dd4bf"
+backgroundColor = "#0d1117"
+secondaryBackgroundColor = "#161b22"
+textColor = "#e6edf3"
+linkColor = "#2dd4bf"
+borderColor = "#222c3a"
+
+# Type
+font = "sans-serif"
+baseFontSize = 16
+headingFontSizes = ["4rem", "1.75rem", "1.15rem"]
+headingFontWeights = [600, 600, 600]
+
+# Makes the estimated value the visual anchor of the page
+metricValueFontSize = "3.25rem"
+metricValueFontWeight = 700
+
