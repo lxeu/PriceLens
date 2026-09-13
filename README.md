@@ -21,10 +21,10 @@ https://pricelens.streamlit.app
 
 ## Tech stack
 
-**Fronted:** Streamlit
-**Backend** Python
-**Data Processing:** Pandas, NumPy
-**Training Diagnostics:** Matplotlib
+- **Fronted:** Streamlit
+- **Backend** Python
+- **Data Processing:** Pandas, NumPy
+- **Training Diagnostics:** Matplotlib
 
 ## Run locally
 
